@@ -15,13 +15,13 @@ public class People {
         this.name = name;
         orderItems = new ArrayList<>();
         if (groupAdminStatus) {
-            groupAdmin = new GroupAdmin;
+            groupAdmin = new GroupAdmin();
         }
 
     }
 
 
-    public void addOrderItems {
+    public void addOrderItems() {
 
     }
 
