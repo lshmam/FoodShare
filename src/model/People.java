@@ -7,7 +7,7 @@ public class People {
 
     private String name;
     private List<String> orderItems;
-    private GroupAdmin groupAdmin;
+    private GAdmin groupAdmin;
 
 
     public People(String name, boolean groupAdminStatus) {
@@ -15,7 +15,7 @@ public class People {
         this.name = name;
         orderItems = new ArrayList<>();
         if (groupAdminStatus) {
-            groupAdmin = new GroupAdmin();
+            groupAdmin = new GAdmin();
         }
 
     }
@@ -41,11 +41,11 @@ public class People {
         this.orderItems = orderItems;
     }
 
-    public GroupAdmin getGroupAdmin() {
+    public GAdmin getGroupAdmin() {
         return groupAdmin;
     }
 
-    public void setGroupAdmin(GroupAdmin groupAdmin) {
+    public void setGroupAdmin(GAdmin groupAdmin) {
         this.groupAdmin = groupAdmin;
     }
 
