@@ -6,7 +6,7 @@ import java.util.List;
 public class People {
 
     private String name;
-    private List<String> orderItems;
+    private List<Order> orderItems;
     private GroupAdmin groupAdmin;
 
 
@@ -33,11 +33,11 @@ public class People {
         this.name = name;
     }
 
-    public List<String> getOrderItems() {
+    public List<Order> getOrderItems() {
         return orderItems;
     }
 
-    public void setOrderItems(List<String> orderItems) {
+    public void setOrderItems(List<Order> orderItems) {
         this.orderItems = orderItems;
     }
 
