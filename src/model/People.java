@@ -1,5 +1,6 @@
 package model;
 
+import java.security.acl.Group;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,19 +11,16 @@ public class People {
     private GroupAdmin groupAdmin;
 
 
-    public People(String name, boolean groupAdminStatus) {
-
+    public People(String name, GroupAdmin groupAdmin) {
         this.name = name;
         orderItems = new ArrayList<>();
-        if (groupAdminStatus) {
-            groupAdmin = new GroupAdmin();
-        }
+        this.groupAdmin = groupAdmin;
 
     }
 
 
-    public void addOrderItems() {
-
+    public void addOrderItems(Order order) {
+        orderItems.add(order);
     }
 
     public String getName() {
