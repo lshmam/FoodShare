@@ -1,9 +1,14 @@
 package model;
 
+import java.util.ArrayList;
+
 public class Restaurant {
     String restaurantName;
 
-    public void Restaurant(String name) {
+    ArrayList<String> menuList;
+
+
+    public Restaurant(String name) {
         restaurantName = name;
     }
 
