@@ -16,5 +16,4 @@ public class GroupAdmin {
         peopleList.add(p);
     }
 
-
 }
